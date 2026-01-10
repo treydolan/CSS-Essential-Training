@@ -1,3 +1,78 @@
+/*
+Color Pallette
+#1abc9c - turquoise
+#2ecc71 - emerald
+#3498db - peter river
+#9b59b6 - amethyst
+#34495e - wet asphalt
+#f1c40f - sun flower
+#e67e22 - carrot
+#e74c3c - alizarin
+#ecf0f1 - clouds
+#95a5a6 - concrete
+*/
+
+
+/* Global Styles
+---------------------------------------- */
+body {
+    color: #34495e;
+}
+
 img {
     width: 300px;
+}
+
+a {
+    color: #2ecc71;
+}
+a:hover {
+    text-decoration: none;
+    color: #27ae60;
+}
+
+/* Profile
+---------------------------------------- */
+header {
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+/* Projects
+---------------------------------------- */
+.projects {
+    background-color: #1abc9c;
+}
+
+.projects .btn {
+    color: #ecf0f1;
+    background-color: #34495e;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.projects .btn:hover {
+    background-color: #2c3e50;
+    color: #bdc3c7;
+}
+
+/* Education
+---------------------------------------- */
+.work {
+    background-color: #9b59b6;
+    color: #ecf0f1;
+}
+
+
+
+/* Work
+---------------------------------------- */
+
+
+
+/* Contact
+---------------------------------------- */
+footer {
+    background-color: #3498db;
 }
