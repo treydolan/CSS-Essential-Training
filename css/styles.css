@@ -70,6 +70,7 @@ h1, h2 {
 header {
     background-color: #3498db;
     color: aliceblue;
+    text-align: center;
 }
 
 /* Projects
@@ -140,15 +141,17 @@ header {
 footer {
     background-color: #3498db;
     color: antiquewhite;
+    text-align: center;
 }
 
-footer ul li{
-    list-style: none;
+.contact-list {
+    list-style-type: none;
     padding: 0;
-    background-color: aliceblue;
-    border-radius: 10px;
-    margin: 5px;
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
 }
