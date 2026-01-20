@@ -1,16 +1,18 @@
-/*
-Color Pallette
-#1abc9c - turquoise
-#2ecc71 - emerald
-#3498db - peter river
-#9b59b6 - amethyst
-#34495e - wet asphalt
-#f1c40f - sun flower
-#e67e22 - carrot
-#e74c3c - alizarin
-#ecf0f1 - clouds
-#95a5a6 - concrete
-*/
+/* Color Pallette
+---------------------------------------- */
+
+:root {
+    --turquoise: #1abc9c;
+    --emerald: #2ecc71;
+    --peter-river: #3498db;
+    --amethyst: #9b59b6;
+    --wet-asphalt: #34495e;
+    --sun-flower: #f1c40f;
+    --carrot: #e67e22;
+    --alizarin: #e74c3c;
+    --clouds: #ecf0f1;
+    --concrete: #95a5a6;
+}
 
 
 /* Global Styles
@@ -21,7 +23,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 
 body {
     color: #34495e;
@@ -92,7 +93,6 @@ h3 {
 header {
     background-color: #3498db;
     color: aliceblue;
-    text-align: center;
 }
 
 /* Projects
@@ -122,11 +122,6 @@ header {
     overflow: hidden;
 }
 
-.project-item img {
-    float:left;
-    margin-right: 20px;
-}
-
 .project-item h3 {
     margin-top: 0;
 }
@@ -145,14 +140,6 @@ header {
     color: lightpink;
 }
 
-.job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 70px;
-}
-
-
-
 /* Education
 ---------------------------------------- */
 .education {
@@ -167,20 +154,16 @@ header {
     width: 60%;
 }
 
-
 /* Contact
 ---------------------------------------- */
 footer {
     background-color: #3498db;
     color: antiquewhite;
-    text-align: center;
 }
 
 .contact-list {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
 .contact-list a {
@@ -191,4 +174,42 @@ footer {
 
 .contact-list a:hover {
     color: yellowgreen;
+}
+
+/* Responsive
+---------------------------------------- */
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float:left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 70px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        line-height: 1;
+    }
+
+    .contact-list {
+        padding: 5px;
+    }
 }
